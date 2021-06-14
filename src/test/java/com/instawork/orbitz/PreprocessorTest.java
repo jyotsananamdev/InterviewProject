@@ -22,21 +22,19 @@ public class PreprocessorTest {
     public static String flying_from;
     public static String flying_to;
 
- //   @Parameters({ "browser" })
+    @Parameters({ "browser" })
     @BeforeTest
-    public void startUp()
+    public void startUp(String browser)
     {
         readConstants();
-        //String browser
-        /*if(browser.equalsIgnoreCase("chrome")) {
+        if(browser.equalsIgnoreCase("chrome")) {
             driver = new ChromeProvider().createDriver();
         }
         else if(browser.equalsIgnoreCase("firefox")){
             driver = new FirefoxProvider().createDriver();
         }else {
             driver = new ChromeProvider().createDriver();
-        }*/
-        driver = new ChromeProvider().createDriver();
+        }
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
     }

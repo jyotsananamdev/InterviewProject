@@ -90,7 +90,7 @@ public class FlightPage extends CommonTest {
     {
         click(searchButton);
         Assert.assertTrue(getPageURL().contains("Flights-Search"), "user should navigate to flight search page");
-        waitForElementToBeVisible(cheapestFlightText,30);
+        waitForElementToBeVisible(cheapestFlightText,40);
     }
 
     public void verifyFlightDetails(String flyingFrom, String flyingTo, Date departureDate, Date returningDate)
