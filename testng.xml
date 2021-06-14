@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="GmailTestSuite" verbose="1" parallel="tests" thread-count="2">
+<suite name="Flight booking" verbose="1" parallel="tests" thread-count="2">
 
     <test name="Flight Booking Chrome Test">
         <parameter name="browser" value="chrome"/>
