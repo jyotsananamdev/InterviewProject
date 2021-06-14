@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="GmailTestSuite" verbose="1" parallel="tests" thread-count="2">
+
+    <test name="Flight Booking Chrome Test">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.instawork.orbitz.tests.FlightBookingTestCase"/>
+        </classes>
+    </test>
+    <!-- Enable it for parallel testing -->
+<!--    <test name="Flight Booking firefox Test">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="com.instawork.orbitz.tests.FlightBookingTestCase"/>
+        </classes>
+    </test>-->
+
+</suite>
